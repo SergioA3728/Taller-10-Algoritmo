@@ -40,7 +40,7 @@ def dijkstra(graph, start):
 if __name__ == "__main__":
     inicio = 'Bodega'
     distancias, previos = dijkstra(graph, inicio)
-
+#
     print(f"=== RESULTADOS DE RUTAS DESDE {inicio.upper()} ===\n")
 
     tiendas_objetivo = ['A', 'B', 'C', 'D', 'E']
@@ -58,7 +58,7 @@ if __name__ == "__main__":
             nodo_actual = previos[nodo_actual]
 
         camino.insert(0, inicio)  
-        
+
         ruta_texto = " -> ".join(camino)
         print(f"Tienda {destino}")
         print(f"   Ruta: {ruta_texto}")
